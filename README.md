@@ -38,7 +38,12 @@ source - [VQGAN+CLIP — How does it work?](https://alexasteinbruck.medium.com/v
 ![VQGAN+CLIP — How does it work?](https://ljvmiranda921.github.io/assets/png/vqgan/clip_vqgan_with_image.png)
 
 Image source - [The Illustrated VQGAN](https://ljvmiranda921.github.io/assets/png/vqgan/clip_vqgan_with_image.png)
-___
+
+# Try out with different combinations
+![info](https://raw.githubusercontent.com/rupak-roy/VQGAN-CLIP/main/1__vwNbasrHuw5ScVIugi4aw.jpeg)
+
+![info](https://raw.githubusercontent.com/rupak-roy/VQGAN-CLIP/main/1_yVHBKcdoGDs7SNZ21r94Bw.jpg)
+
 # References
 
 * [VQGAN_CLIP( hHugging Face )](https://huggingface.co/spaces/akhaliq/VQGAN_CLIP)
