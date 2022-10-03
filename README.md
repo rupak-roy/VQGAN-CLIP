@@ -13,4 +13,18 @@ VQGAN was able to solve Transformer’s scaling problem by using an intermediate
 The codebook is generated through a process called vector quantization (VQ), i.e., the “VQ” part of “VQGAN.” Vector quantization is a signal processing technique for encoding vectors. It represents all visual parts found in the convolutional step in a quantized form, making it less computationally expensive once passed to a transformer network.
 
 One can think of vector quantization as a process of dividing vectors into groups that have approximately the same number of points closest to them. Each group is then represented by a centroid (codeword), usually obtained via k-means or any other clustering algorithm. In the end, one learns a dictionary of centroids (codebook) and their corresponding members.
+
+# Brief about CLIP:
+    
+**CLIP( Contrastive Language–Image Pre-training )** a model trained to determine which caption from a set of captions best fits with a given image.
+
+OpenAI's CLIP model aims to learn generic visual concept with natural language supervision. This is because sandard computer vision model only work well on specific task, and require significant effort to adapt to a new task, hence have weak generalization capabilities. CLIP bridges the gap via learning directly from raw text about images at a web scale level.
+CLIP does not directly optimize for the performance of a benchmark task (e.g. CIFAR), so as to keep its "zero-shot" capabilities for generalization. More interestingly, CLIP shows that scaling a simple pre-training task - which is to learn "which text matches with which image", is sufficient to achieve competitive zero-shot performance on many image classification datasets. 
+
+![clipa](https://openaiassets.blob.core.windows.net/$web/clip/draft/20210104b/overview-a.svg)
+
+![clipb](https://openaiassets.blob.core.windows.net/$web/clip/draft/20210104b/overview-b.svg)
+
+CLIP trains a text encoder (Bag-of-Words or Text Transformer) and an image encoder (ResNet or Image Transformer) which learns feature representations of a given pair of text and image. The scaled cosine similarity matrix of the image and text feature is computed, and the diagonal values are minimized to force the image feature match its corresponding text feature.
+
 ___
