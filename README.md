@@ -27,4 +27,15 @@ CLIP does not directly optimize for the performance of a benchmark task (e.g. CI
 
 CLIP trains a text encoder (Bag-of-Words or Text Transformer) and an image encoder (ResNet or Image Transformer) which learns feature representations of a given pair of text and image. The scaled cosine similarity matrix of the image and text feature is computed, and the diagonal values are minimized to force the image feature match its corresponding text feature.
 
+# VQGAN+CLIP:
+
+CLIP guides VQGAN towards an image that is the best match to a given text. CLIP is the “Perceptor” and VQGAN is the “Generator”. VQGAN like all GANs VQGAN takes in a noise vector, and outputs a (realistic) image. CLIP on the other hand takes in an image and text, and outputs the image features and text features respectively. The similarity between image and text can be represented by the cosine similarity of the learnt feature vectors.
+
+By leveraging CLIPs capacities as a “steering wheel”, we can use CLIP to guide a search through VQGAN’s latent space to find images that match a text prompt very well according to CLIP.
+
+source - [VQGAN+CLIP — How does it work?](https://alexasteinbruck.medium.com/vqgan-clip-how-does-it-work-210a5dca5e52)
+
+![VQGAN+CLIP — How does it work?](https://ljvmiranda921.github.io/assets/png/vqgan/clip_vqgan_with_image.png)
+
+Image source - [The Illustrated VQGAN](https://ljvmiranda921.github.io/assets/png/vqgan/clip_vqgan_with_image.png)
 ___
