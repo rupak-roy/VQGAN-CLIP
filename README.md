@@ -39,3 +39,9 @@ source - [VQGAN+CLIP — How does it work?](https://alexasteinbruck.medium.com/v
 
 Image source - [The Illustrated VQGAN](https://ljvmiranda921.github.io/assets/png/vqgan/clip_vqgan_with_image.png)
 ___
+# References
+
+* [VQGAN_CLIP( hHugging Face )](https://huggingface.co/spaces/akhaliq/VQGAN_CLIP)
+* [The Illustrated VQGAN](https://ljvmiranda921.github.io/notebook/2021/08/08/clip-vqgan/)
+* [VQGAN+CLIP — How does it work?](https://alexasteinbruck.medium.com/vqgan-clip-how-does-it-work-210a5dca5e52)
+* [Image Generation Based on Abstract Concepts Using CLIP + BigGAN](https://wandb.ai/gudgud96/big-sleep-test/reports/Image-Generation-Based-on-Abstract-Concepts-Using-CLIP-BigGAN--Vmlldzo1MjA2MTE)
